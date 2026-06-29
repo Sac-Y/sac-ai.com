@@ -2,7 +2,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 img{display:block;max-width:100%;}
 a{color:inherit;text-decoration:none;}
-body{overflow-x:hidden;}
+html,body{overflow-x:hidden;}
 main{position:relative;z-index:2;}
 
 /* ───── 顶部导航 ───── */
@@ -92,4 +92,20 @@ main{position:relative;z-index:2;}
 /* ───── reduced motion ───── */
 @media (prefers-reduced-motion:reduce){
   *{animation:none !important;transition:none !important;}
+}
+
+@media (max-width:600px){
+  :root{
+    --pad-x:20px;
+    --rail-x:20px;
+  }
+
+  .rail,
+  .cross{display:none;}
+
+  .nav{padding:0 var(--pad-x);}
+  .nav__links{gap:10px;font-size:9px;}
+
+  .btn{white-space:nowrap;}
+  .btn .arr{flex:none;}
 }
