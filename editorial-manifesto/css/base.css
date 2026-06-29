@@ -31,6 +31,13 @@ main{position:relative;z-index:2;}
   margin-left:16px;color:var(--ink);letter-spacing:.02em;
 }
 .nav__stat i{width:5px;height:5px;border-radius:50%;background:var(--accent);}
+.nav__github{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:18px;height:18px;margin-left:4px;
+  color:var(--ink);transition:color .25s var(--ease),transform .25s var(--ease);
+}
+.nav__github svg{width:15px;height:15px;display:block;}
+.nav__github:hover{color:var(--accent);transform:translateY(-1px);}
 .nav__links a.is-active{color:var(--ink);}
 .nav__links a.is-active::after{
   content:"";display:block;height:1px;background:var(--accent);

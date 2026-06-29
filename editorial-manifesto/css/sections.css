@@ -267,7 +267,7 @@
 .signal__head{
   display:flex;align-items:baseline;justify-content:space-between;gap:16px;
   padding-bottom:16px;border-bottom:1px solid var(--ink);
-  margin-bottom:4px;
+  margin-bottom:0;
 }
 .signal__title{
   font-family:var(--serif-cjk);font-weight:600;
@@ -278,7 +278,7 @@
 }
 .signal__legend b{color:var(--accent);font-weight:600;}
 
-.signal__list{list-style:none;}
+.signal__list{list-style:none;margin:0;padding:0;}
 .srow{border-bottom:1px solid var(--line);}
 .srow > a,.srow.srow--soon{
   display:grid;
@@ -532,7 +532,7 @@ a.cbar__item:hover .cbar__arr{transform:translateX(5px);color:var(--accent);}
   .nav{height:72px;padding:0 18px;}
   .nav__brand{font-size:20px;}
   .nav__links{gap:12px;font-size:9.5px;letter-spacing:.04em;}
-  .nav__links .sep,.nav__stat{display:none;}
+  .nav__links .sep,.nav__stat,.nav__github{display:none;}
   .nav__links a:nth-of-type(3),.nav__links a:nth-of-type(4){display:none;}
   .hero{
     grid-template-columns:1fr;
