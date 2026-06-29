@@ -2,6 +2,7 @@
 .claude/
 gen_hero.sh
 gen_refs.sh
+docs/plans/
 node_modules/
 .env
 .env.*
