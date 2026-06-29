@@ -79,7 +79,7 @@
 .feat__frame::after,
 .writing__list::before,
 .writing__list::after{
-  content:"";position:absolute;width:20px;height:20px;pointer-events:none;
+  content:"";position:absolute;z-index:3;width:20px;height:20px;pointer-events:none;
 }
 .feat__frame::before{
   left:-12px;top:-12px;

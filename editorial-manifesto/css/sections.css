@@ -73,7 +73,7 @@
   transition:opacity .35s var(--ease),filter .35s var(--ease);
 }
 /* 默认是细 plus,用于 about 人物和局部装饰 */
-.portrait__cross{position:absolute;width:74px;height:74px;pointer-events:none;}
+.portrait__cross{position:absolute;z-index:5;display:block;width:74px;height:74px;pointer-events:none;}
 .portrait__cross::before,.portrait__cross::after{content:"";position:absolute;background:var(--line);opacity:.9;}
 .portrait__cross::before{left:50%;top:0;width:1px;height:100%;transform:translateX(-.5px);}
 .portrait__cross::after{top:50%;left:0;width:100%;height:1px;transform:translateY(-.5px);}
@@ -82,6 +82,8 @@
 /* 首页人物图用取景 L 角 */
 .hero .portrait__cross{width:58px;height:58px;--corner-overhang:6px;}
 .hero .portrait__cross::before,.hero .portrait__cross::after{transform:none;}
+.hero .portrait__cross::before,
+.hero .portrait__cross::after{background:rgba(201,192,178,.95);opacity:1;}
 .hero .portrait__cross--tl{top:66px;left:20px;}
 .hero .portrait__cross--tl::before{
   top:0;left:calc(var(--corner-overhang) * -1);
